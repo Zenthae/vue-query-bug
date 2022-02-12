@@ -1,3 +1,3 @@
 <template>
-  <QBtn />
+  <div>Home</div>
 </template>
