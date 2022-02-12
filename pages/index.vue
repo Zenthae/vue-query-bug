@@ -1,0 +1,3 @@
+<template>
+  <QBtn />
+</template>
