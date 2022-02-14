@@ -4,6 +4,6 @@
 
 <style>
 .base-input {
-  @apply border border-black text-green-500 rounded-full bg-red-700;
+  @apply border border-black text-green-500;
 }
 </style>

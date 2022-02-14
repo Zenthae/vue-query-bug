@@ -3,11 +3,19 @@ import { defineConfig } from 'windicss/helpers';
 export default defineConfig({
   preflight: true,
 
-  attributify: {
-    prefix: 'w:',
+  extract: {
+    include: [
+      '**/*.css',
+      '**/*.scss',
+      '**/*.sass',
+      '**/*.vue',
+      '**/*.ts',
+      'windi.config.ts',
+    ],
   },
 
-  shortcuts: {
-    btn: 'py-2 px-4 font-semibold rounded-lg shadow-md',
-  },
+  // TODO: not working
+  // attributify: {
+  //   prefix: 'w:',
+  // },
 });
