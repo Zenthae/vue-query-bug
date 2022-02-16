@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <BaseInput v-model="searchText" class="m-16" />
-    <div class="flex gap-4 flex-wrap justify-center overflow-x-auto">
+    <div class="flex flex-wrap mx-4 gap-4 justify-center overflow-x-auto">
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aliquid.
       </div>
@@ -46,14 +46,14 @@ const searchText = ref('');
 
 <style lang="scss">
 .page {
-  @apply flex flex-col items-center justify-center h-full;
+  @apply flex flex-col h-full items-center justify-center;
 
   input {
     width: 50%;
   }
 
   div > div {
-    @apply shadow-xl p-2 w-32;
+    @apply p-2 w-32;
   }
 }
 </style>
