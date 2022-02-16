@@ -1,7 +1,7 @@
 <template>
   <div class="page">
-    <BaseInput v-model="searchText" class="mb-16" />
-    <div class="flex gap-4 flex-wrap">
+    <BaseInput v-model="searchText" class="m-16" />
+    <div class="flex gap-4 flex-wrap justify-center overflow-x-auto">
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aliquid.
       </div>
