@@ -1,5 +1,6 @@
 <template>
-  <div class="max-h-screen h-screen">
+  <div class="h-screen max-h-screen">
+    <NavBar />
     <slot />
   </div>
 </template>
