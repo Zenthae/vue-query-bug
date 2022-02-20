@@ -37,11 +37,17 @@
         officiis?
       </div>
     </div>
+    {{ data }}
   </div>
 </template>
 
 <script lang="ts" setup>
 const searchText = ref('');
+const { data } = useFetch('/api/recipes', {
+  params: {
+    search: searchText.value,
+  },
+});
 </script>
 
 <style lang="scss">
