@@ -43,11 +43,8 @@
 
 <script lang="ts" setup>
 const searchText = ref('');
-const { data } = useFetch('/api/recipes', {
-  params: {
-    search: searchText.value,
-  },
-});
+
+const { data } = useAsyncData('recipes', () => $fetch('/api/ping'));
 </script>
 
 <style lang="scss">

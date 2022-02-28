@@ -11,6 +11,9 @@ export default defineNuxtConfig({
   meta: {
     link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   },
+  privateRuntimeConfig: {
+    API_URL: process.env.API_URL,
+  },
   typescript: {
     shim: false,
     strict: true,

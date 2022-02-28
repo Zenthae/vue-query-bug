@@ -3,8 +3,8 @@ import { APIEndpoint } from '~~/utils/api';
 
 const endpoint: Handle = async (_req, _res) => {
   try {
-    const response = await fetch(APIEndpoint.ALL_RECIPES);
-    const data = await response.json();
+    const response = await fetch(APIEndpoint.PING);
+    const data = await response.text();
 
     _res.statusCode = 200;
     return data;
