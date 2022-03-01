@@ -38,12 +38,13 @@
       </div>
     </div>
     {{ data }}
-    <BaseModal />
+    <BaseModal v-model="showModal"> Hello from modal ! </BaseModal>
   </div>
 </template>
 
 <script lang="ts" setup>
 const searchText = ref('');
+const showModal = ref(true);
 
 const { data } = useAsyncData('recipes', () => $fetch('/api/ping'));
 </script>
