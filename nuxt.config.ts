@@ -1,24 +1,28 @@
+import presetAttributify from '@unocss/preset-attributify';
+import { presetMini } from '@unocss/preset-mini';
+import { presetWind } from '@unocss/preset-wind';
 import { defineNuxtConfig } from 'nuxt3';
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  // ssr: false,
-  buildModules: ['nuxt-windicss'],
-  build: {
-    extractCSS: true,
-  },
-  css: [],
+  buildModules: ['@vueuse/nuxt', '@unocss/nuxt'],
   meta: {
+    title: 'Cookbook',
     link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   },
   privateRuntimeConfig: {
     API_URL: process.env.API_URL,
   },
-  typescript: {
-    shim: false,
-    strict: true,
+  vueuse: {
+    ssrHandlers: true,
   },
-  windicss: {
-    analyze: true,
+  unocss: {
+    uno: true,
+    attributify: true,
+    preflight: true,
+    icons: {
+      scale: 1.2,
+    },
+    presets: [presetWind({}), presetAttributify({}), presetMini()],
   },
 });

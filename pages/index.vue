@@ -38,6 +38,7 @@
       </div>
     </div>
     {{ data }}
+    <BaseModal />
   </div>
 </template>
 
@@ -46,17 +47,3 @@ const searchText = ref('');
 
 const { data } = useAsyncData('recipes', () => $fetch('/api/ping'));
 </script>
-
-<style lang="scss">
-.page {
-  @apply flex flex-col h-full items-center justify-center;
-
-  input {
-    width: 50%;
-  }
-
-  div > div {
-    @apply p-2 w-32;
-  }
-}
-</style>

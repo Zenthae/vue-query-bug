@@ -6,11 +6,11 @@
 </template>
 
 <script lang="ts" setup>
-import { useVModel } from '@vueuse/core';
 const props = defineProps<{
   modelValue: string;
   label?: string;
 }>();
+
 const emit = defineEmits(['update:modelValue']);
 
 const data = useVModel(props, 'modelValue', emit);
