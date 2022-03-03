@@ -1,5 +1,4 @@
 import presetAttributify from '@unocss/preset-attributify';
-import { presetMini } from '@unocss/preset-mini';
 import { presetWind } from '@unocss/preset-wind';
 import { defineNuxtConfig } from 'nuxt3';
 
@@ -23,6 +22,6 @@ export default defineNuxtConfig({
     icons: {
       scale: 1.2,
     },
-    presets: [presetWind({}), presetAttributify({}), presetMini()],
+    presets: [presetWind({}), presetAttributify({})],
   },
 });

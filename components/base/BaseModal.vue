@@ -1,7 +1,7 @@
 <template>
   <div v-if="modelValue">
     <div>
-      <slot name="top" />
+      <div></div>
       <hr />
       <slot name="default" />
       <hr />
