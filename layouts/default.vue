@@ -1,7 +1,9 @@
 <template>
-  <div class="h-screen max-h-screen">
-    <NavBar />
-    <slot />
+  <div flex="~ col nowrap" h="screen max-screen">
+    <NavBar h="12" />
+    <div flex="grow">
+      <slot />
+    </div>
   </div>
 </template>
 
