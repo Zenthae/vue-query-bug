@@ -1,7 +1,7 @@
 <template>
-  <div flex="~ col nowrap" h="screen max-screen">
-    <NavBar h="12" />
-    <div flex="grow">
+  <div u:flex="~ col nowrap" u:h="screen max-screen">
+    <NavBar u:h="12" />
+    <div u:flex="grow" u:p="4">
       <slot />
     </div>
   </div>
