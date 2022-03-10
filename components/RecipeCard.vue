@@ -1,6 +1,6 @@
 <template>
-  <div u:shadow="black md" u:p="2">
-    <img :src="image" width="100px" height="100px" />
+  <div u:shadow="gray-600 md" u:p="2">
+    <img :src="image" width="200px" height="200px" />
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 defineProps({
   image: {
     type: String,
-    default: 'https://via.placeholder.com/100x100',
+    default: 'https://via.placeholder.com/200x200',
   },
 });
 </script>
