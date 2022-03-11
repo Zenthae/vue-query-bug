@@ -5,9 +5,7 @@ import { defineNuxtConfig } from 'nuxt3';
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  build: {
-    // transpile: ['vue-query'],
-  },
+  build: {},
   buildModules: ['@vueuse/nuxt', '@unocss/nuxt', '@pinia/nuxt'],
   meta: {
     title: 'Cookbook',
@@ -37,6 +35,7 @@ export default defineNuxtConfig({
         prefix: 'u:',
       }),
     ],
+    exclude: ['node_modules'],
     shortcuts: [
       [
         /^btn-(.*)$/,

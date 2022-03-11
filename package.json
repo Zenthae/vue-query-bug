@@ -21,7 +21,7 @@
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^8.4.1",
-    "nuxt3": "latest",
+    "nuxt3": "3.0.0-27447229.20f3171",
     "sass": "^1.49.9",
     "typescript": "^4.5.5",
     "vue-eslint-parser": "^8.2.0"
