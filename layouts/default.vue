@@ -3,10 +3,7 @@
     <div u:flex="grow">
       <slot />
     </div>
-    <VueQueryDevTools />
   </div>
 </template>
 
-<script lang="ts" setup>
-import { VueQueryDevTools } from 'vue-query/devtools';
-</script>
+<script lang="ts" setup></script>
