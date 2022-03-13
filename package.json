@@ -17,7 +17,6 @@
     "@unocss/preset-icons": "^0.27.2",
     "@unocss/preset-mini": "^0.27.0",
     "@unocss/preset-wind": "^0.27.0",
-    "@vueuse/nuxt": "^7.7.0",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^8.4.1",
@@ -27,6 +26,7 @@
     "vue-eslint-parser": "^8.2.0"
   },
   "dependencies": {
+    "@vueuse/core": "^8.0.0",
     "pinia": "^2.0.11",
     "vue-query": "^1.19.2"
   }

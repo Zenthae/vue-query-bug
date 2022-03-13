@@ -6,7 +6,7 @@ import { defineNuxtConfig } from 'nuxt3';
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   build: {},
-  buildModules: ['@vueuse/nuxt', '@unocss/nuxt', '@pinia/nuxt'],
+  buildModules: ['@unocss/nuxt', '@pinia/nuxt'],
   meta: {
     title: 'Cookbook',
     link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
